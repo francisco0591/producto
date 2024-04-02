@@ -1,0 +1,10 @@
+create table productos(
+idproducto number(3,0)  GENERATED ALWAYS AS IDENTITY  primary key,
+nombre varchar2(30),
+fechaRegistro date
+)
+
+insert into productos(nombre,fechaRegistro) values('monitor',sysdate);
+insert into productos(nombre,fechaRegistro) values('mouse',sysdate);
+insert into productos(nombre,fechaRegistro) values('teclado',sysdate);
+

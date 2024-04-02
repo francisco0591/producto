@@ -1,0 +1,7 @@
+CREATE or replace PROCEDURE splistarProductos (nombre in varchar2 ,  fechaRegistro in date
+,ccursor out SYS_REFCURSOR)
+As
+BEGIN 
+insert into productos(nombre,fechaRegistro) values(nombre,fechaRegistro);
+OPEN ccursor FOR SELECT * FROM productos;
+END;
